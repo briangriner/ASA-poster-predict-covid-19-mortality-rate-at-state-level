@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(23eed54f-ae8e-4d9c-af19-85b4d6a23ba0)'
+    appType: 'functionAppLinux'
+    appName: 'ASA-COVID'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOCKER|microsoft/azure-functions-node8:2.0'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
