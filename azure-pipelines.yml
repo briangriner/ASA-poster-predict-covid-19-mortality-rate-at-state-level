@@ -20,5 +20,5 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    targetPath: $(System.DefaultWorkingDirectory)/bin/WebApp
+    targetPath: $(System.DefaultWorkingDirectory)/_briangriner.ASA-poster
     artifactName: WebApp
