@@ -19,3 +19,6 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: PublishBuildArtifacts@1
+  inputs:
+    targetPath: $(System.DefaultWorkingDirectory)/bin/WebApp
+    artifactName: WebApp
